@@ -1,0 +1,35 @@
+img {
+    width: 100%;
+}
+
+.actions {
+    display: flex;
+    gap: 1em;
+}
+
+.action {
+    padding-inline: 1.5em;
+    padding-block: .4em;
+    background: transparent;
+    color: white;
+    border: solid .2em white;
+}
+
+.action:hover {
+    background: rgba(255, 255, 255, 0.192);
+}
+
+.action.active {
+    background: rgba(255, 255, 255, 0.192);
+    opacity: 0.3;
+}
+
+.log {
+    width: 90%;
+    background-color: white;
+    color: black;
+    padding: .4em;
+    font-size: 0.7em;
+    font-family: arial;
+    word-break: break-all;
+}

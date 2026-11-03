@@ -1,0 +1,89 @@
+
+
+#nav-actions {
+    z-index: 1;
+    top: 0;
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(49, 49, 49);
+    padding: 1em;
+    box-shadow: 0em .3em 1em rgba(0, 0, 0, 0.459);
+}
+
+.title.nav {
+    position: relative;
+    outline: none .1em rgb(0, 241, 0);
+    margin: 0.5em;
+    font-family: "Press Start 2P", system-ui;
+    font-size: 1.3em;
+    letter-spacing: 0.05em;
+    color: white;    
+    user-select: none;
+    padding-inline: .1em;
+}
+
+.title.nav:hover {
+    filter: 
+    drop-shadow(0 0 0.08em rgba(255, 255, 255, 0.342))
+    drop-shadow(0 0 0.4em rgba(255, 255, 255, 0.301))
+}
+
+.container-buttons {
+    display: flex;
+    gap: 2em;
+}
+
+.button.nav {
+    font-family: monospace;
+    font-weight: 500;
+    font-size: 1.5em;
+    padding-inline: 1em;
+    padding-block: .4em;
+    background: transparent;
+    color: rgb(9, 252, 1);
+    outline: solid .1em rgb(9, 252, 1);
+    border: 0;
+}
+
+.button.nav:hover {
+    cursor: pointer;
+    background-color: rgba(9, 252, 1, 0.164);
+}
+
+.button.nav:active {
+    transition: none;
+    background-color: rgba(9, 252, 1, 0.315);
+}
+
+.computers {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    gap: 1em;
+    margin: 1em;
+}
+
+.computer {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1em;
+    background: rgba(0, 0, 0, 0.322);
+    letter-spacing: 0.01em;
+    font-family: monospace;
+    margin: 1em;
+    padding: 1em;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    font-weight: 100;
+    font-size: 1.5em;
+
+    outline: solid .2em rgba(0, 0, 0, 0.644);
+    border-radius: .4em;
+    filter: drop-shadow(
+        .5em .4em .2em black
+    );
+}

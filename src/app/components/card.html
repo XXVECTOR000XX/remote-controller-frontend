@@ -1,0 +1,12 @@
+<p><strong> Nombre: </strong> {{name_user()}} </p>
+<div class="image" (click)="isActiveMouse() ? onClickImage($event): null">
+    <img [src]="'data:image/png;base64,' + image_64()" alt="pantalla">
+</div>
+<div class="actions">
+    <button class="action" [hidden]="actions_hidden()" [class.active]="isActiveKeyboard()" (click)="changeStateKeyboardInput($event)">Teclado</button>
+    <button class="action" [hidden]="actions_hidden()" [class.active]="isActiveMouse()" (click)="changeStateMouseInput($event)">Mouse</button>
+</div>
+
+@if (inputLog() != '') {
+    <div class="log"> {{inputLog()}} </div>
+}
